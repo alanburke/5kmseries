@@ -1,33 +1,20 @@
-var map = L.map('main-map', {
-    center: [53.357, -8.83],
-    zoom: 9,
-    minZoom: 9,
-    maxZoom: 14,
-    })
+var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/{styleId}/256/{z}/{x}/{y}.png',
+    cloudmadeAttribution = 'Map data &copy; 2013 OpenStreetMap contributors, Imagery &copy; 2013 CloudMade';
 
-L.tileLayer('http://{s}.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/47926/256/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-    maxZoom: 18
-}).addTo(map);
+var minimal   = L.tileLayer(cloudmadeUrl, {styleId: 47926, attribution: cloudmadeAttribution}),
+    midnight  = L.tileLayer(cloudmadeUrl, {styleId: 999,   attribution: cloudmadeAttribution}),
 
-L.marker([53.342506846354354, -8.683533668518066]).addTo(map)
-    .bindPopup('Athenry - <br> Newcastle course.');
-L.marker([53.526878064558595,  -8.854808807373047]).addTo(map)
-    .bindPopup('Tuam');
+var routes = L.geoJson(routes, {
 
-function onEachFeature(feature, layer) {
-  var popupContent = "<p>I started out as a GeoJSON " +
-      feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
+  style: function (feature) {
+    return feature.properties && feature.properties.style;
+  },
 
-  if (feature.properties && feature.properties.popupContent) {
-    popupContent += feature.properties.popupContent;
-  }
+  onEachFeature: onEachFeature,
 
-  layer.bindPopup(popupContent);
-}
+});
 
-
-L.geoJson([routes, hqs], {
+var hqs = L.geoJson(hqs, {
 
   style: function (feature) {
     return feature.properties && feature.properties.style;
@@ -37,7 +24,7 @@ L.geoJson([routes, hqs], {
 
   pointToLayer: function (feature, latlng) {
     return L.circleMarker(latlng, {
-      radius: 8,
+      radius: 5,
       fillColor: "#ff7800",
       color: "#000",
       weight: 1,
@@ -45,5 +32,35 @@ L.geoJson([routes, hqs], {
       fillOpacity: 0.8
     });
   }
-}).addTo(map);
 
+});
+
+
+var map = L.map('main-map', {
+    center: [53.357, -8.83],
+    zoom: 9,
+    maxZoom: 14,
+    layers: [minimal, routes, hqs]
+
+});
+
+var baseMaps = {
+    "Day": minimal,
+    "Night": midnight
+};
+
+var overlayMaps = {
+    "Routes": routes,
+    "HQs": hqs
+};
+
+L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+function onEachFeature(feature, layer) {
+  if (feature.properties && feature.properties.popupContent) {
+    popupContent = feature.properties.popupContent;
+  }
+
+  layer.bindPopup(popupContent);
+}
