@@ -2,7 +2,7 @@ var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70c
     cloudmadeAttribution = 'Map data &copy; 2013 OpenStreetMap contributors, Imagery &copy; 2013 CloudMade';
 
 var minimal   = L.tileLayer(cloudmadeUrl, {styleId: 47926, attribution: cloudmadeAttribution}),
-    midnight  = L.tileLayer(cloudmadeUrl, {styleId: 999,   attribution: cloudmadeAttribution}),
+    midnight  = L.tileLayer(cloudmadeUrl, {styleId: 999,   attribution: cloudmadeAttribution});
 
 var routes = L.geoJson(routes, {
 
