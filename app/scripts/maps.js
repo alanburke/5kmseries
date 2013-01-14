@@ -40,7 +40,7 @@ var map = L.map('main-map', {
     center: [53.357, -8.83],
     zoom: 9,
     maxZoom: 14,
-    layers: [minimal, routes, hqs]
+    layers: [midnight, routes, hqs]
 
 });
 
