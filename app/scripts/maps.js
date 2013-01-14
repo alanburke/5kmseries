@@ -64,3 +64,16 @@ function onEachFeature(feature, layer) {
 
   layer.bindPopup(popupContent);
 }
+
+  $('.nav .athenry').click(function(e){
+    map.zoomOut();
+    map.zoomOut();
+    map.setView([53.34221219515683, -8.683855533599854] , 13);
+    e.preventDefault();
+  });
+
+  $('.nav .claregalway').click(function(e){
+    map.setView([53.33294886082618, -8.940296173095703] , 13);
+    e.preventDefault();
+  });
+
