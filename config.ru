@@ -1,5 +1,7 @@
 use Rack::Static, 
-  :urls => [%w[/], "/images", "/scripts", "/styles", "/data"],
+  # :urls => [%w[/], "/images", "/scripts", "/styles", "/data"],
+ :urls => %w[/],     # match all requests 
+
 # otherwise 404 NotFound
   :root => "dist"
 
