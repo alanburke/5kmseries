@@ -65,15 +65,17 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(popupContent);
 }
 
-  $('.nav .athenry').click(function(e){
-    map.zoomOut();
-    map.zoomOut();
-    map.setView([53.34221219515683, -8.683855533599854] , 13);
+  $('.nav-map a').click(function(e){
+    var lat = $(this).data('lat');
+    var lon = $(this).data('lon');
+    map.setView([lat, lon] , 13);
+    e.preventDefault();
+  });
+  $('.navbar a.all').click(function(e){
+    var lat = 53.357;
+    var lon = -8.83;
+    map.setView([lat, lon] ,9);
     e.preventDefault();
   });
 
-  $('.nav .claregalway').click(function(e){
-    map.setView([53.33294886082618, -8.940296173095703] , 13);
-    e.preventDefault();
-  });
 

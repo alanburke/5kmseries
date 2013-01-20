@@ -8,19 +8,45 @@ $(document).ready(function(){
   $('#results').dataTable({
     "sAjaxSource": '/data/results/2012.txt',
     "aaSorting": [[0,'asc']],
-    "bPaginate": false,
+    //"bPaginate": false,
+    "iDisplayLength": 25,
+    //"bScrollInfinite": true,
+    //"bScrollCollapse": true,
+    //"sScrollY": "500px",
+
     "bLengthChange": false,
+    "bAutoWidth": false,
+
     "bFilter": true,
     "bInfo": false,
     "aoColumnDefs": [
       { "bVisible": false, "aTargets": chipCols }
-     ]
+     ],
+     /*
+    "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
+      if ( aData[5] == "" ) {
+        $('td:eq(5)', nRow).html( '<b>-</b>' );
+        $('tr', nRow).addClass('hidden');
+        console.log(nRow);
+        console.log(iDisplayIndex);
+        $('#results tr:eq(2)').addClass('hidden');
+        $('#results tr:eq(2)').remove();
+            nRow.className = "disabled_row"
+
+
+      }
+    },
+    */
   });
 
   $('.btn.chip').click(function(){
     for (var i = 0; i < chipCols.length; i++) {
-      fnShowHide(chipCols[i]);
+      fnShow(chipCols[i]);
     }
+    for (var i = 0; i < raceCols.length; i++) {
+      fnShow(raceCols[i]);
+    }
+    $('.btn-toolbar.results .btn').removeClass('active');
     $(this).toggleClass('active');
   });
 
@@ -33,12 +59,18 @@ $(document).ready(function(){
     }
     fnShow(gunCol);
     fnShow(chipCol);
+
+    $('.btn-toolbar.results .btn').removeClass('active');
     $(this).toggleClass('active');
   });
 
   $('.btn.all').click(function(){
+    $('.single-races .btn').removeClass('active');
     for (var i = 0; i < raceCols.length; i++) {
       fnShow(raceCols[i]);
+    }
+    for (var i = 0; i < chipCols.length; i++) {
+      fnHide(chipCols[i]);
     }
     $(this).toggleClass('active');
   });
