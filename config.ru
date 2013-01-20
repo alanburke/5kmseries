@@ -1,5 +1,6 @@
 use Rack::Static, 
-  :urls => ["/", "/images", "/scripts", "/styles", "/data"],
+  :urls => [%w[/], "/images", "/scripts", "/styles", "/data"],
+# otherwise 404 NotFound
   :root => "dist"
 
 run lambda { |env|
