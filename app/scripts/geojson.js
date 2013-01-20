@@ -2,6 +2,7 @@ var hqs = {
     "type": "FeatureCollection",
     "features": [
         {
+            "id": 1,
             "type": "Feature",
             "properties": {
                 "popupContent": "Newcastle Community Centre"
@@ -13,6 +14,7 @@ var hqs = {
             }
         },
         {
+            "id": 2,
             "type": "Feature",
             "properties": {
                 "popupContent": "Árd Rí House Hotel"
@@ -24,6 +26,7 @@ var hqs = {
             }
         },
         {
+            "id": 3,
             "type": "Feature",
             "properties": {
                 "popupContent": "Claregalway Corporate Park"
@@ -35,6 +38,7 @@ var hqs = {
             }
         },
         {
+            "id": 4,
             "type": "Feature",
             "properties": {
                 "popupContent": "Regional Sports Centre"
@@ -46,6 +50,7 @@ var hqs = {
             }
         },
         {
+            "id": 5,
             "type": "Feature",
             "properties": {
                 "popupContent": "Regional Sports Centre"
@@ -57,6 +62,7 @@ var hqs = {
             }
         },
         {
+            "id": 6,
             "type": "Feature",
             "properties": {
                 "popupContent": "Gaelscoil Riabhach"
