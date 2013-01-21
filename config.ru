@@ -1,11 +1,8 @@
 use Rack::Static, 
-  # :urls => [%w[/], "/images", "/scripts", "/styles", "/data"],
- :urls => %w[/],     # match all requests 
- :try => ['.html', 'index.html', '/index.html'] # try these postfixes sequentially
+  :root => "dist",
+  :urls => ["/images", "/scripts", "/styles", "/data" , "/favicon.ico"],
+  :try => ['index.html', '/index.html'] # try these postfixes sequentially
 
-
-# otherwise 404 NotFound
-  :root => "dist"
 
 run lambda { |env|
   [
