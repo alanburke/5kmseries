@@ -1,6 +1,7 @@
 use Rack::Static, 
   :root => "dist",
-  :urls => ["/images", "/scripts", "/styles", "/data" , "/favicon.ico"],
+  :urls => ["/images", "/scripts", "/styles", "/data" , "/favicon.ico" , "/"],
+  :index => "index.html",
   :try => ['index.html', '/index.html'] # try these postfixes sequentially
 
 
