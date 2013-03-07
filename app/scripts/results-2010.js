@@ -17,7 +17,7 @@ $(document).ready(function(){
     "bAutoWidth": false,
 
     "bFilter": true,
-    "bInfo": false,
+    "bInfo": false
      /*
     "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
       if ( aData[5] == "" ) {
