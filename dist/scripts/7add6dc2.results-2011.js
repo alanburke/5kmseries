@@ -21,7 +21,7 @@ $(document).ready(function(){
     "bInfo": false,
     "aoColumnDefs": [
       { "bVisible": false, "aTargets": chipCols }
-     ],
+     ]
      /*
     "fnRowCallback": function( nRow, aData, iDisplayIndex ) {
       if ( aData[5] == "" ) {
