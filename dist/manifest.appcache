@@ -1,6 +1,12 @@
+TypeError: 'null' is not an object (evaluating 'a.firstChild')
+
+  http://maps.gstatic.com/intl/en_ALL/mapfiles/450c/maps2.api/main.js:469 in xf
+  http://maps.gstatic.com/intl/en_ALL/mapfiles/450c/maps2.api/main.js:666 in Te
+  http://maps.gstatic.com/intl/en_ALL/mapfiles/450c/maps2.api/main.js:1446 in Yu
+  http://www.activeglobal.com/gl/running/galway-ireland/galway-5km-series-2013/HideFrame:680 in initializeSmallMap
 CACHE MANIFEST
 
-# Time: Mon Mar 25 2013 21:08:09 GMT+0000 (GMT)
+# Time: Thu Mar 28 2013 19:23:35 GMT+0000 (GMT)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
