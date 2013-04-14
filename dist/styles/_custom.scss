@@ -2,7 +2,6 @@ body .container-fluid {
   margin: 0 auto;
 }
 #main-map {
-  height: 350px;
   color: black;
   label {
     color: black;
@@ -89,3 +88,53 @@ tr.disabled_row{
 	background: url('../images/forward_enabled_hover.png') no-repeat top right;
 }
 
+/* Map */
+#pane {
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  right:0px;
+  width:66.6666%;
+  }
+#main-map  {
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  width:200%;
+  left:-50%;
+  transition:opacity 250ms;
+  -moz-transition:opacity 250ms;
+  -webkit-transition:opacity 250ms;
+}
+article {
+  width:40%;
+  min-width:300px;
+  position:relative;
+}
+header,
+section {
+  padding:20px;
+  margin-left:20px;
+  position:relative;
+  background-color: rgb(63, 76, 90);
+  background-color: rgba(63, 76, 90, 0.6);
+  transition:background 500ms, color 500ms;
+  -moz-transition:background 500ms, color 500ms;
+  -webkit-transition:background 500ms, color 500ms;
+  &.inactive {
+    opacity: 0.25;
+    font-style: italic; 
+    text-shadow: rgba(64,64,64,1) 0px 0px 4px;
+  }
+}
+@media (min-width:800px) {
+  header,
+  section {
+    padding:40px;
+    margin-left:40px;
+  }
+}
+/* Distinguish the "cover page" visually other sections. */
+body.section-0 #map {
+  opacity:0.5; 
+}

@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="styles/4fb58de9.main.css">
+        <link rel="stylesheet" href="styles/59ede08a.main.css">
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
          <!--[if lte IE 8]>
              <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.ie.css" />
@@ -18,10 +18,10 @@
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
     <body>
-    <div class="container-fluid"><div class="row-fluid"><div class="span12">
+        <div id="pane"><div id="main-map"></div></div>
+      <article>
+        <header class="meta" id="nav">
       <h1> County Galway <strong>5km series</strong> - 2013 </h1>
-      <div class="navbar">
-        <div class="navbar-inner">
       <ul class="nav nav-pills nav-map">
         <li><a data-lat="53.298325" data-lon="-8.742027" href="#athenry">Athenry <time>30th April</time></a></li>
         <li><a data-lat="53.33294" data-lon="-8.940296" href="#claregalway">Claregalway <time>7th May</time></a></li>
@@ -30,15 +30,8 @@
         <li><a data-lat="53.270860" data-lon="-9.057369" href="#galwaycity">Galway City<time>28th May</time></a></li>
         <li><a data-lat="53.52709" data-lon="-8.851118" href="#tuam">Tuam <time>4th June</time></a></li>
       </ul>
-          <a class="brand all pull-right" href="#general">All</a>
-
-      </div>
-      </div>
-
-      <div class="row-fluid"> <div class="span12">
-        <div id="main-map"></div>
-      </div></div>
-
+       </header>
+      
       <section class="info" id="general">
         <h2> About the race series </h2>
         <blockquote><p>Everything you need is already inside. <small> Bill Bowerman</small></p></blockquote>
@@ -48,7 +41,6 @@
         <p><strong>Entry to the series <strike>will open on March 28th at 8:00pm.</strike> closed at 8:35pm and is now CLOSED!</strong></h3>
       </section>
 
-      <h2> Where and When</h2>
       <section class="info" id="athenry">
         <h3>Athenry</h3>
         <p><time datetime="2012-04-30T19:45">Tuesday 30th April, 7:45pm</time> </p>
@@ -73,7 +65,7 @@
       <section class="info" id="galwaycity">
         <h3>Galway City</h3>
         <p><time datetime="2012-05-28T20:00">Tuesday 28th May, 8:00pm</time> <br />
-            Venue: Galway Racecourse.<strong>Note - NEW venue</strong></p>
+            Venue: Galway Racecourse. <strong>Note - NEW venue</strong></p>
         <p>Route to be finalised</p>
       </section>
       <section class="info" id="tuam">
@@ -82,7 +74,9 @@
             Venue: Ard Rí House Hotel, Milltown Road</p>
       </section>
 
+      <section class="info" id="general-extra">
         <p><em>Please car pool to venues - parking is strictly limited at all venues!</em></p>
+      </section>
       <!--
       <section>
         <h2> 2013 results </h2>
@@ -121,8 +115,8 @@
         </table>
       </section>
         -->
-      <div class="navbar navbar-inverse">
-      <ul class="nav nav-pills nav-years nav-inverse">
+      <section class="results">
+      <ul class="nav-years">
         <li><a href="./index.html">2013</a></li>
         <li><a href="./2012.html">2012</a></li>
         <li><a href="./2011.html">2011</a></li>
@@ -138,7 +132,7 @@
       </ul>
       </div>
 
-    </div></div></div>
+    </article>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -157,7 +151,7 @@
     <!-- leaflet @TODO - AMD this-->
     <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
     <script src="scripts/30026007.geojson.js"></script>
-    <script src="scripts/92fb9800.maps.js"></script>
+    <script src="scripts/af35f4ed.maps.js"></script>
 
     <!-- datatables @TODO - AMD this-->
     <!--
