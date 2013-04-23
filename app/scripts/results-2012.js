@@ -5,14 +5,12 @@ $(document).ready(function(){
   var chipCols = [6,8,10,12,14,16];
   var raceCols = [5,7,9,11,13,15,17];
 
-  $('#results').dataTable({
+    var resultsTable =  $('#results').dataTable({
     "sAjaxSource": '/data/results/2012.txt',
     "aaSorting": [[0,'asc']],
-    //"bPaginate": false,
     "iDisplayLength": 25,
-    //"bScrollInfinite": true,
-    //"bScrollCollapse": true,
-    //"sScrollY": "500px",
+    "sScrollX": "100%",
+    "bScrollCollapse": true,
 
     "bLengthChange": false,
     "bAutoWidth": false,
