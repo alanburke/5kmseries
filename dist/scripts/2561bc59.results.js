@@ -2,17 +2,14 @@
  * init datatables
  */
 $(document).ready(function(){
-  var chipCols = [6,8,10,12,14,16];
-  var raceCols = [5,7,9,11,13,15,17];
+    var source = '/data/results/' + raceYear + '.txt';
 
-  $('#results').dataTable({
-    "sAjaxSource": '/data/results/2012.txt',
+    var resultsTable =  $('#results').dataTable({
+    "sAjaxSource": source,
     "aaSorting": [[0,'asc']],
-    //"bPaginate": false,
     "iDisplayLength": 25,
-    //"bScrollInfinite": true,
-    //"bScrollCollapse": true,
-    //"sScrollY": "500px",
+    "sScrollX": "100%",
+    "bScrollCollapse": true,
 
     "bLengthChange": false,
     "bAutoWidth": false,
@@ -54,11 +51,17 @@ $(document).ready(function(){
     var gunCol = $(this).data('gun');
     var chipCol = $(this).data('chip');
 
-    for (var i = 5; i < 18; i++) {
-      fnHide(i);
+    for (var i = 0; i < raceCols.length; i++) {
+      fnHide(raceCols[i]);
     }
+    for (var i = 0; i < chipCols.length; i++) {
+      fnHide(chipCols[i]);
+    }
+
     fnShow(gunCol);
-    fnShow(chipCol);
+    if (chipCol) {
+      fnShow(chipCol);
+    }
 
     $('.btn-toolbar.results .btn').removeClass('active');
     $(this).toggleClass('active');
@@ -74,5 +77,28 @@ $(document).ready(function(){
     }
     $(this).toggleClass('active');
   });
-
 });
+
+function fnShowHide(iCol) {
+    /* Get the DataTables object again - this is not a recreation, just a get of the object */
+    var oTable = $('#results').dataTable();
+
+    var bVis = oTable.fnSettings().aoColumns[iCol].bVisible;
+    oTable.fnSetColumnVis( iCol, bVis ? false : true );
+}
+
+function fnShow(iCol) {
+    /* Get the DataTables object again - this is not a recreation, just a get of the object */
+    var oTable = $('#results').dataTable();
+
+    var bVis = oTable.fnSettings().aoColumns[iCol].bVisible;
+    oTable.fnSetColumnVis( iCol, true );
+}
+
+function fnHide(iCol) {
+    /* Get the DataTables object again - this is not a recreation, just a get of the object */
+    var oTable = $('#results').dataTable();
+
+    var bVis = oTable.fnSettings().aoColumns[iCol].bVisible;
+    oTable.fnSetColumnVis( iCol, false);
+}
