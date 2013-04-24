@@ -51,11 +51,17 @@ $(document).ready(function(){
     var gunCol = $(this).data('gun');
     var chipCol = $(this).data('chip');
 
-    for (var i = 5; i < 18; i++) {
-      fnHide(i);
+    for (var i = 0; i < raceCols.length; i++) {
+      fnHide(raceCols[i]);
     }
+    for (var i = 0; i < chipCols.length; i++) {
+      fnHide(chipCols[i]);
+    }
+
     fnShow(gunCol);
-    fnShow(chipCol);
+    if (chipCol) {
+      fnShow(chipCol);
+    }
 
     $('.btn-toolbar.results .btn').removeClass('active');
     $(this).toggleClass('active');
