@@ -1,6 +1,9 @@
+ReferenceError: Can't find variable: L
+
+  http://localhost:3501/scripts/0bc7522b.maps.js:4
 CACHE MANIFEST
 
-# Time: Tue May 14 2013 22:50:14 GMT+0100 (IST)
+# Time: Wed May 22 2013 19:21:09 GMT+0100 (IST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -21,16 +24,7 @@ CACHE MANIFEST
 #  configFile: /usr/local/lib/node_modules/yeoman/lib/support/confess.json
 
 CACHE:
-http://a.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/999/256/10/485/331.png
-http://a.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/999/256/10/487/332.png
 http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js
-http://b.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/999/256/10/485/332.png
-http://b.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/999/256/10/486/331.png
-http://c.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/999/256/10/486/332.png
-http://c.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/999/256/10/487/331.png
-http://cdn.leafletjs.com/leaflet-0.4/images/layers.png
-http://cdn.leafletjs.com/leaflet-0.4/images/zoom-in.png
-http://cdn.leafletjs.com/leaflet-0.4/images/zoom-out.png
 http://cdn.leafletjs.com/leaflet-0.4/leaflet.css
 http://cdn.leafletjs.com/leaflet-0.4/leaflet.js
 http://localhost:3501/images/back_disabled.png
