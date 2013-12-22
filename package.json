@@ -3,5 +3,7 @@
   "name": "5km.ie",
   "version": "0.0.0",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  }
 }
