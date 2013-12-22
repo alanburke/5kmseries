@@ -15,18 +15,6 @@ module.exports = function( grunt ) {
       dir: 'app/components'
     },
 
-    // Coffee to JS compilation
-    coffee: {
-      compile: {
-        files: {
-          'temp/scripts/*.js': 'app/scripts/**/*.coffee' 
-        },
-        options: {
-          basePath: 'app/scripts'
-        }
-      }
-    },
-
     // compile .scss/.sass to .css using Compass
     compass: {
       dist: {
@@ -46,17 +34,8 @@ module.exports = function( grunt ) {
       dest: ''
     },
 
-    // headless testing through PhantomJS
-    mocha: {
-      all: ['test/**/*.html']
-    },
-
     // default watch configuration
     watch: {
-      coffee: {
-        files: 'app/scripts/**/*.coffee',
-        tasks: 'coffee reload'
-      },
       compass: {
         files: [
           'app/styles/**/*.{scss,sass}'
@@ -71,37 +50,6 @@ module.exports = function( grunt ) {
           'app/images/**/*'
         ],
         tasks: 'reload'
-      }
-    },
-
-    // default lint configuration, change this to match your setup:
-    // https://github.com/cowboy/grunt/blob/master/docs/task_lint.md#lint-built-in-task
-    lint: {
-      files: [
-        'Gruntfile.js',
-        'app/scripts/**/*.js',
-        'spec/**/*.js'
-      ]
-    },
-
-    // specifying JSHint options and globals
-    // https://github.com/cowboy/grunt/blob/master/docs/task_lint.md#specifying-jshint-options-and-globals
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        browser: true
-      },
-      globals: {
-        jQuery: true
       }
     },
 
@@ -157,21 +105,6 @@ module.exports = function( grunt ) {
       dist: '<config:rev.img>'
     },
 
-    // rjs configuration. You don't necessarily need to specify the typical
-    // `path` configuration, the rjs task will parse these values from your
-    // main module, using http://requirejs.org/docs/optimization.html#mainConfigFile
-    //
-    // name / out / mainConfig file should be used. You can let it blank if
-    // you're using usemin-handler to parse rjs config from markup (default
-    // setup)
-    rjs: {
-      // no minification, is done by the min task
-      optimize: 'none',
-      baseUrl: './scripts',
-      wrap: true,
-      name: 'main'
-    },
-
     // While Yeoman handles concat/min when using
     // usemin blocks, you can still use them manually
     concat: {
@@ -182,8 +115,5 @@ module.exports = function( grunt ) {
       dist: ''
     }
   });
-
-  // Alias the `test` task to run the `mocha` task instead
-  grunt.registerTask('test', 'server:phantom mocha');
 
 };
