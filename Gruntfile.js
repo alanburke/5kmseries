@@ -7,6 +7,15 @@ module.exports = function( grunt ) {
   //
   grunt.initConfig({
 
+    pkg: grunt.file.readJSON('package.json'),
+
+    // Project settings
+    yeoman: {
+        // Configurable paths
+        app: 'app',
+        dist: 'dist'
+    },
+
     // Project configuration
     // ---------------------
 
@@ -20,100 +29,89 @@ module.exports = function( grunt ) {
       dist: {
         // http://compass-style.org/help/tutorials/configuration-reference/#configuration-properties
         options: {
-          css_dir: 'temp/styles',
-          sass_dir: 'app/styles',
-          images_dir: 'app/images',
-          javascripts_dir: 'temp/scripts',
+          sassDir: 'app/styles',
+          imagesDir: 'app/images',
+          javascriptsDir: 'dist/scripts',
+          cssDir: 'app/css',
           force: true
         }
       }
     },
 
-    // generate application cache manifest
-    manifest:{
-      dest: ''
-    },
-
     // default watch configuration
     watch: {
+      options: {
+          livereload: true,
+      },
       compass: {
         files: [
           'app/styles/**/*.{scss,sass}'
         ],
-        tasks: 'compass reload'
+        tasks: ['compass']
       },
-      reload: {
+      livereload: {
         files: [
           'app/*.html',
-          'app/styles/**/*.css',
+          'app/css/**/*.css',
           'app/scripts/**/*.js',
           'app/images/**/*'
         ],
-        tasks: 'reload'
       }
     },
 
-    // Build configuration
-    // -------------------
-
-    // the staging directory used during the process
-    staging: 'temp',
-    // final build output
-    output: 'dist',
-
-    mkdirs: {
-      staging: 'app/'
-    },
-
-    // Below, all paths are relative to the staging directory, which is a copy
-    // of the app/ directory. Any .gitignore, .ignore and .buildignore file
-    // that might appear in the app/ tree are used to ignore these values
-    // during the copy process.
-
-    // concat css/**/*.css files, inline @import, output a single minified css
-    css: {
-      'styles/main.css': ['styles/**/*.css']
-    },
-
-    // renames JS/CSS to prepend a hash of their contents for easier
-    // versioning
-    rev: {
-      js: 'scripts/**/*.js',
-      css: 'styles/**/*.css',
-      img: 'images/**'
-    },
-
-    // usemin handler should point to the file containing
-    // the usemin blocks to be parsed
-    'usemin-handler': {
-      html: 'index.html'
-    },
-
-    // update references in HTML/CSS to revved files
-    usemin: {
-      html: ['**/*.html'],
-      css: ['**/*.css']
-    },
-
-    // HTML minification
-    html: {
-      files: ['**/*.html']
-    },
-
-    // Optimizes JPGs and PNGs (with jpegtran & optipng)
-    img: {
-      dist: '<config:rev.img>'
+    // The actual grunt server settings
+    connect: {
+        options: {
+            port: 9000,
+            livereload: 35729,
+            // Change this to '0.0.0.0' to access the server from outside
+            hostname: '0.0.0.0'
+        },
+        livereload: {
+            options: {
+                open: true,
+                base: [
+                    '.tmp',
+                    '<%= yeoman.app %>'
+                ]
+            }
+        },
+        dist: {
+            options: {
+                open: true,
+                base: '<%= yeoman.dist %>',
+                livereload: false
+            }
+        }
     },
 
     // While Yeoman handles concat/min when using
     // usemin blocks, you can still use them manually
     concat: {
-      dist: ''
+      dist: {
+        src: [
+          'app/scripts/*.js',
+        ],
+        dest: 'scripts/build/production.js',
+      }
     },
 
-    min: {
-      dist: ''
-    }
+    // Uglify
+    uglify: {
+        build: {
+            src: 'scripts/build/production.js',
+            dest: 'scripts/build/production.min.js'
+        }
+    },
+
   });
+
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  grunt.registerTask('serve', ['compass', 'connect:livereload', 'watch']);
 
 };
