@@ -42,12 +42,12 @@ module.exports = function( grunt ) {
     jekyll: {
         options: {
           src: 'app',
-          dest: '_site'
+          dest: 'dist'
         },
         dist: {
           options: {
             src: 'app',
-            dest: '_site'
+            dest: 'dist'
           },
         },
     },
@@ -78,7 +78,7 @@ module.exports = function( grunt ) {
           'app/css/**/*.css',
           'app/scripts/**/*.js',
           'app/images/**/*',
-          '_site/*.html',
+          'dist/*.html',
         ],
       }
     },
@@ -103,7 +103,7 @@ module.exports = function( grunt ) {
         dist: {
             options: {
                 open: true,
-                base: '_site',
+                base: 'dist',
                 livereload: true
             }
         }
