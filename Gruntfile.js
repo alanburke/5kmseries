@@ -38,6 +38,20 @@ module.exports = function( grunt ) {
       }
     },
 
+    // Jekyll
+    jekyll: {
+        options: {
+          src: 'app',
+          dest: '_site'
+        },
+        dist: {
+          options: {
+            src: 'app',
+            dest: '_site'
+          },
+        },
+    },
+
     // default watch configuration
     watch: {
       options: {
@@ -49,12 +63,22 @@ module.exports = function( grunt ) {
         ],
         tasks: ['compass']
       },
+      jekyll: {
+        files: [
+          'app/_posts/**/*',
+          'app/_includes/**/*',
+          'app/_layouts/**/*',
+          'app/_data/**/*',
+        ],
+        tasks: ['jekyll']
+      },
       livereload: {
         files: [
           'app/*.html',
           'app/css/**/*.css',
           'app/scripts/**/*.js',
-          'app/images/**/*'
+          'app/images/**/*',
+          '_site/*.html',
         ],
       }
     },
@@ -79,8 +103,8 @@ module.exports = function( grunt ) {
         dist: {
             options: {
                 open: true,
-                base: '<%= yeoman.dist %>',
-                livereload: false
+                base: '_site',
+                livereload: true
             }
         }
     },
@@ -111,7 +135,8 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-jekyll');
 
-  grunt.registerTask('serve', ['compass', 'connect:livereload', 'watch']);
+  grunt.registerTask('serve', ['compass', 'jekyll', 'connect:dist', 'watch']);
 
 };
