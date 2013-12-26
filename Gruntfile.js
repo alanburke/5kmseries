@@ -72,15 +72,6 @@ module.exports = function( grunt ) {
         ],
         tasks: ['jekyll']
       },
-      livereload: {
-        files: [
-          'app/*.html',
-          'app/css/**/*.css',
-          'app/scripts/**/*.js',
-          'app/images/**/*',
-          'dist/*.html',
-        ],
-      }
     },
 
     // The actual grunt server settings
@@ -91,20 +82,10 @@ module.exports = function( grunt ) {
             // Change this to '0.0.0.0' to access the server from outside
             hostname: '0.0.0.0'
         },
-        livereload: {
-            options: {
-                open: true,
-                base: [
-                    '.tmp',
-                    '<%= yeoman.app %>'
-                ]
-            }
-        },
         dist: {
             options: {
                 open: true,
                 base: 'dist',
-                livereload: true
             }
         }
     },
