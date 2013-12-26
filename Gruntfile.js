@@ -69,6 +69,7 @@ module.exports = function( grunt ) {
           'app/_includes/**/*',
           'app/_layouts/**/*',
           'app/_data/**/*',
+          'app/css/**/*',
         ],
         tasks: ['jekyll']
       },
@@ -118,6 +119,7 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-jekyll');
 
-  grunt.registerTask('serve', ['compass', 'jekyll', 'connect:dist', 'watch']);
+  grunt.registerTask('serve', ['compass', 'jekyll', 'connect', 'watch']);
+  grunt.registerTask('dist', ['compass', 'jekyll']);
 
 };
