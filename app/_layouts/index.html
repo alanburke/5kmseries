@@ -24,6 +24,7 @@
       <section class="info" id="{{venue.name | downcase}}">
         <h3>{{venue.name}}</h3>
         <p><time datetime="{{venue.datetime}}"> {{ venue.datetime | date: "%A %-d %B, %-I:%M" }}{{ venue.datetime | date: "%p" | downcase }} </time> </p>
+        <p><strong>Venue:</strong> {{ venue.hq }} </p>
         {% for desc in venue.descs %}
           <p> {{ desc.desc }} </p>
         {% endfor %}
