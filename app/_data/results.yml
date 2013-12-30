@@ -110,3 +110,54 @@
       data-result: 6
     - venue: Galway City
       data-result: 7
+
+- year: 2008
+  chiptimes: FALSE
+  result-number: FALSE
+  result-gender: FALSE
+  result-club: FALSE
+  races: 
+    - venue: Athenry
+      data-result: 2
+    - venue: Tuam
+      data-result: 3
+    - venue: Craughwell
+      data-result: 4
+    - venue: Claregalway
+      data-result: 5
+    - venue: Loughrea
+      data-result: 6
+    - venue: Galway City
+      data-result: 7
+
+- year: 2007
+  chiptimes: FALSE
+  result-number: FALSE
+  result-gender: FALSE
+  result-club: FALSE
+  races: 
+    - venue: Athenry
+      data-result: 2
+    - venue: Tuam
+      data-result: 3
+    - venue: Craughwell
+      data-result: 4
+    - venue: Loughrea
+      data-result: 5
+    - venue: Galway City
+      data-result: 6
+
+- year: 2006
+  chiptimes: FALSE
+  result-number: FALSE
+  result-gender: FALSE
+  result-club: FALSE
+  races: 
+    - venue: Athenry
+      data-result: 2
+    - venue: Tuam
+      data-result: 3
+    - venue: Craughwell
+      data-result: 4
+    - venue: Galway City
+      data-result: 5
