@@ -21,7 +21,7 @@
   </section>
 
   {% for venue in site.data.venues %}
-      <section class="info" id="{{venue.name | downcase}}">
+      <section class="info" id="{{venue.name | downcase | replace: ' ', '-' }}">
         <h3>{{venue.name}}</h3>
         <p><time datetime="{{venue.datetime}}"> {{ venue.datetime | date: "%A %-d %B, %-I:%M" }}{{ venue.datetime | date: "%p" | downcase }} </time> </p>
         <p><strong>Venue:</strong> {{ venue.hq }} </p>
