@@ -70,11 +70,10 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(popupContent);
 }
 
-  $('.nav-map a').click(function(e){
+  $('.nav-map a, a.button').click(function(e){
     var lat = $(this).data('lat');
     var lon = $(this).data('lon');
-    map.setView([lat, lon] , 13);
-    e.preventDefault();
+    map.setView([lat, lon] , 14);
   });
   $('.navbar a.all').click(function(e){
     var lat = 53.357;
