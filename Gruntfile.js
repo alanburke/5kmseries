@@ -70,6 +70,7 @@ module.exports = function( grunt ) {
           'app/_layouts/**/*',
           'app/_data/**/*',
           'app/css/**/*',
+          'app/scripts/**/*',
         ],
         tasks: ['jekyll']
       },
