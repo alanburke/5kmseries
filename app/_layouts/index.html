@@ -9,7 +9,7 @@
       <h1>Galway <strong>5km series</strong> </h1>
       <ul class="nav nav-pills nav-map">
         {% for venue in site.data.venues %}
-        <li><a data-lat="{{ venue.lat }}" data-lon="{{ venue.lon }}" href="#{{ venue.name | downcase }}">
+        <li><a data-lat="{{ venue.lat }}" data-lon="{{ venue.lon }}" href="#{{ venue.name | downcase | replace: ' ', '-' }}">
           {{ venue.name }} <time> {{ venue.datetime | date: "%-d %B" }}</time></a>
         </li>
         {% endfor %}
