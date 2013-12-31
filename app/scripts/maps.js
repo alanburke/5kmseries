@@ -4,11 +4,15 @@ var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70c
 var minimal   = L.tileLayer(cloudmadeUrl, {styleId: 47926, attribution: cloudmadeAttribution}),
     midnight  = L.tileLayer(cloudmadeUrl, {styleId: 999,   attribution: cloudmadeAttribution});
 
+var routeStyle = {
+    "color": "red",
+    "weight": 3,
+    "opacity": 0.65
+}
+
 var routes = L.geoJson(routes, {
 
-  style: function (feature) {
-    return feature.properties && feature.properties.style;
-  },
+  style: routeStyle,
 
   onEachFeature: onEachFeature,
 
@@ -24,7 +28,7 @@ var hqs = L.geoJson(hqs, {
 
   pointToLayer: function (feature, latlng) {
     return L.circleMarker(latlng, {
-      radius: 5,
+      radius: 6,
       fillColor: "#ff7800",
       color: "#000",
       weight: 1,
