@@ -7394,7 +7394,7 @@ section.inactive {
   /* line 137, ../styles/_custom.scss */
   header,
   section {
-    padding: 40px;
+    padding: 20px 40px;
     margin-left: 40px;
   }
 }
