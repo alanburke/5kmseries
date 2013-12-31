@@ -26,7 +26,7 @@
           <small><a class="button" data-lat="{{ venue.lat }}" data-lon="{{ venue.lon }}" href="#{{ venue.name | downcase | replace: ' ', '-' }}">show map</a></small>
         </h3>
         <p><time datetime="{{venue.datetime}}"> {{ venue.datetime | date: "%A %-d %B, %-I:%M" }}{{ venue.datetime | date: "%p" | downcase }} </time> </p>
-        <p><strong>Venue:</strong> {{ venue.hq }} </p>
+        <p><strong>Race HQ:</strong> {{ venue.hq }} </p>
         {% for desc in venue.descs %}
           <p> {{ desc.desc }} </p>
         {% endfor %}
