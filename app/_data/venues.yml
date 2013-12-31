@@ -10,20 +10,20 @@
   datetime: 2012-05-08T20:00
   lat: 53.33294
   lon: -8.940296
-  hq: Claregalway Corporate Park, Oranmore Rd.
+  hq: Claregalway Corporate Park, Oranmore Rd
   
 - name: Loughrea
   datetime: 2012-05-15T20:00
   lat: 53.19866
   lon: -8.588197
-  hq:  "Gaelscoil Riabhach off the Gort Road."
+  hq:  "Gaelscoil Riabhach off the Gort Road"
   descs:
 
 - name: Craughwell
   datetime: 2012-05-22T20:00
   lat: 53.23299
   lon: -8.740117
-  hq: "Community Hall."
+  hq: "Community Hall"
   descs:
 
 - name: Galway City
