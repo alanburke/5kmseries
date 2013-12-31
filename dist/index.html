@@ -12,11 +12,8 @@
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
 
- <!--[if lte IE 8]>
-     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.ie.css" />
- <![endif]-->
 <script src="scripts/vendor/modernizr.min.js"></script>
 
 </head>
@@ -43,7 +40,7 @@
           Craughwell <time> 22 May</time></a>
         </li>
         
-        <li><a data-lat="53.29735" data-lon="-9.0017" href="#galway city">
+        <li><a data-lat="53.29735" data-lon="-9.0017" href="#galway-city">
           Galway City <time> 29 May</time></a>
         </li>
         
@@ -74,46 +71,58 @@
 
   
       <section class="info" id="athenry">
-        <h3>Athenry</h3>
+        <h3>Athenry
+          <small><a class="button" data-lat="53.298325" data-lon="-8.742027" href="#athenry">show map</a></small>
+        </h3>
         <p><time datetime="2012-05-01T19:45"> Tuesday 1 May, 7:45pm </time> </p>
-        <p><strong>Venue:</strong> Athenry Boys School </p>
+        <p><strong>Race HQ:</strong> Athenry Boys School </p>
         
           <p> Race numbers for the series are distributed before this race, so allow extra time to collect your number. </p>
         
       </section>
   
       <section class="info" id="claregalway">
-        <h3>Claregalway</h3>
+        <h3>Claregalway
+          <small><a class="button" data-lat="53.33294" data-lon="-8.940296" href="#claregalway">show map</a></small>
+        </h3>
         <p><time datetime="2012-05-08T20:00"> Tuesday 8 May, 8:00pm </time> </p>
-        <p><strong>Venue:</strong> Claregalway Corporate Park, Oranmore Rd. </p>
+        <p><strong>Race HQ:</strong> Claregalway Corporate Park, Oranmore Rd </p>
         
       </section>
   
       <section class="info" id="loughrea">
-        <h3>Loughrea</h3>
+        <h3>Loughrea
+          <small><a class="button" data-lat="53.19866" data-lon="-8.588197" href="#loughrea">show map</a></small>
+        </h3>
         <p><time datetime="2012-05-15T20:00"> Tuesday 15 May, 8:00pm </time> </p>
-        <p><strong>Venue:</strong> Gaelscoil Riabhach off the Gort Road. </p>
+        <p><strong>Race HQ:</strong> Gaelscoil Riabhach off the Gort Road </p>
         
       </section>
   
       <section class="info" id="craughwell">
-        <h3>Craughwell</h3>
+        <h3>Craughwell
+          <small><a class="button" data-lat="53.23299" data-lon="-8.740117" href="#craughwell">show map</a></small>
+        </h3>
         <p><time datetime="2012-05-22T20:00"> Tuesday 22 May, 8:00pm </time> </p>
-        <p><strong>Venue:</strong> Community Hall. </p>
+        <p><strong>Race HQ:</strong> Community Hall </p>
         
       </section>
   
-      <section class="info" id="galway city">
-        <h3>Galway City</h3>
+      <section class="info" id="galway-city">
+        <h3>Galway City
+          <small><a class="button" data-lat="53.29735" data-lon="-9.0017" href="#galway-city">show map</a></small>
+        </h3>
         <p><time datetime="2012-05-29T20:00"> Tuesday 29 May, 8:00pm </time> </p>
-        <p><strong>Venue:</strong> Galway Racecourse </p>
+        <p><strong>Race HQ:</strong> Galway Racecourse </p>
         
       </section>
   
       <section class="info" id="tuam">
-        <h3>Tuam</h3>
+        <h3>Tuam
+          <small><a class="button" data-lat="53.52709" data-lon="-8.851118" href="#tuam">show map</a></small>
+        </h3>
         <p><time datetime="2012-06-05T20:00"> Tuesday 5 June, 8:00pm </time> </p>
-        <p><strong>Venue:</strong> Ard Rí House Hotel, Milltown Road </p>
+        <p><strong>Race HQ:</strong> Ard Rí House Hotel, Milltown Road </p>
         
       </section>
   
@@ -150,7 +159,7 @@
 
 
   <!-- leaflet @TODO - AMD this-->
-  <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js?2"></script>
   <script src="scripts/geojson.js"></script>
   <script src="scripts/maps.js"></script>
 
