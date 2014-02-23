@@ -1,40 +1,41 @@
 - name: Athenry
-  datetime: 2012-05-01T19:45
+  datetime: 2014-04-29T20:00
   lat: 53.298325 
   lon: -8.742027
   hq: Athenry Boys School
   descs: 
     - desc: Race numbers for the series are distributed before this race, so allow extra time to collect your number. 
 
-- name: Claregalway
-  datetime: 2012-05-08T20:00
-  lat: 53.33294
-  lon: -8.940296
-  hq: Claregalway Corporate Park, Oranmore Rd
-  
 - name: Loughrea
-  datetime: 2012-05-15T20:00
+  datetime: 2014-05-06T20:00
   lat: 53.19866
   lon: -8.588197
   hq:  "Gaelscoil Riabhach off the Gort Road"
   descs:
 
-- name: Craughwell
-  datetime: 2012-05-22T20:00
-  lat: 53.23299
-  lon: -8.740117
-  hq: "Community Hall"
+- name: Maree 
+  datetime: 2014-05-13T20:00
+  lat: 53.24613191149984
+  lon: -8.956215565558523
+  hq: "Renville Woods, Oranmore"
   descs:
+    - desc: Map to follow
 
+- name: Claregalway
+  datetime: 2014-05-20T20:00
+  lat: 53.33294
+  lon: -8.940296
+  hq: Claregalway Corporate Park, Oranmore Rd
+  
 - name: Galway City
-  datetime: 2012-05-29T20:00
+  datetime: 2014-05-27T20:00
   lat: 53.29735
   lon: -9.0017
   hq: "Galway Racecourse"
   descs:
 
 - name: Tuam
-  datetime: 2012-06-05T20:00
+  datetime: 2012-06-03T20:00
   lat: 53.52709
   lon: -8.851118
   hq: "Ard Rí House Hotel, Milltown Road"
