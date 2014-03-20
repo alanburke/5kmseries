@@ -1,8 +1,8 @@
-var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/da41d29fd31b4e8496d6f56f9dc70cbb/{styleId}/256/{z}/{x}/{y}.png',
-    cloudmadeAttribution = 'Map data &copy; 2013 OpenStreetMap contributors, Imagery &copy; 2013 CloudMade';
+var mapboxUrl = 'https://{s}.tiles.mapbox.com/v3/alanburke.hioafg04/{z}/{x}/{y}.png';
+    mapboxAttribution = '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>';
 
-var minimal   = L.tileLayer(cloudmadeUrl, {styleId: 47926, attribution: cloudmadeAttribution}),
-    midnight  = L.tileLayer(cloudmadeUrl, {styleId: 999,   attribution: cloudmadeAttribution});
+var minimal   = L.tileLayer(mapboxUrl, {styleId: 47926, attribution: mapboxAttribution}),
+    midnight  = L.tileLayer(mapboxUrl, {styleId: 999,   attribution: mapboxAttribution});
 
 var routeStyle = {
     "color": "red",
