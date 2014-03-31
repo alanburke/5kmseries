@@ -2,8 +2,9 @@
   datetime: 2014-04-29T20:00
   lat: 53.298325 
   lon: -8.742027
-  hq: Athenry Boys School
+  hq: Athenry Primary Care Medical Centre
   descs: 
+    - desc: NOTE - New race route, and new race HQ!
     - desc: Race numbers for the series are distributed before this race, so allow extra time to collect your number. 
 
 - name: Loughrea
@@ -19,7 +20,6 @@
   lon: -8.956215565558523
   hq: "Renville Woods, Oranmore"
   descs:
-    - desc: Map to follow
 
 - name: Claregalway
   datetime: 2014-05-20T20:00
