@@ -5,12 +5,12 @@ var hqs = {
             "id": 1,
             "type": "Feature",
             "properties": {
-                "popupContent": "Athenry Boys National School"
+                "popupContent": "Athenry Primary Care Medical Centre"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates":
-                  [-8.742027, 53.298325]
+                  [-8.75533914368134, 53.299676124615054]
             }
         },
         {
