@@ -50,6 +50,18 @@ var hqs = {
             }
         },
         {
+            "id": 5,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Maree"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-8.95087,53.23385]
+            }
+        },
+        {
             "id": 6,
             "type": "Feature",
             "properties": {
