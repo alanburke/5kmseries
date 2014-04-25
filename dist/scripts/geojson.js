@@ -53,12 +53,12 @@ var hqs = {
             "id": 5,
             "type": "Feature",
             "properties": {
-                "popupContent": "Maree"
+                "popupContent": "Maree Community Centre and Social Club"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates":
-                  [-8.95087,53.23385]
+                  [-8.950094,53.232133]
             }
         },
         {
