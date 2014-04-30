@@ -1,3 +1,13 @@
+- year: 2014
+  chiptimes: true
+  result-number: true
+  result-gender: true
+  result-club: true
+  races: 
+    - venue: Athenry
+      data-result: 5 
+      data-chip: 6
+
 - year: 2013
   chiptimes: true
   result-number: true
