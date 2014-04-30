@@ -34,6 +34,7 @@
   lon: -9.0017
   hq: "Galway Racecourse"
   descs:
+    - desc: New route on the Racecourse
 
 - name: Tuam
   datetime: 2012-06-03T20:00
