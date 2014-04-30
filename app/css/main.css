@@ -7371,7 +7371,7 @@ section {
   margin-left: 20px;
   position: relative;
   background-color: #3f4c5a;
-  background-color: rgba(63, 76, 90, 0.6);
+  background-color: rgba(63, 76, 90, 0.8);
   transition: background 500ms, color 500ms;
   -moz-transition: background 500ms, color 500ms;
   -webkit-transition: background 500ms, color 500ms;
