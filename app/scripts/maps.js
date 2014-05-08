@@ -1,8 +1,9 @@
-var mapboxUrl = 'https://{s}.tiles.mapbox.com/v3/alanburke.hioafg04/{z}/{x}/{y}.png';
-    mapboxAttribution = '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>';
+var mapAttribution = '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors';
+    mapServerUrl = 'http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png';
+    mapServerUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-var minimal   = L.tileLayer(mapboxUrl, {styleId: 47926, attribution: mapboxAttribution}),
-    midnight  = L.tileLayer(mapboxUrl, {styleId: 999,   attribution: mapboxAttribution});
+var minimal   = L.tileLayer(mapServerUrl, {styleId: 47926, attribution: mapAttribution}),
+    midnight  = L.tileLayer(mapServerUrl, {styleId: 999,   attribution: mapAttribution});
 
 var routeStyle = {
     "color": "red",
