@@ -1,6 +1,8 @@
 var mapAttribution = '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors';
+    mapServerUrl = 'http://{s}.www.toolserver.org/tiles/osm/{z}/{x}/{y}.png';
+    mapServerUrl = 'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png';
     mapServerUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    mapServerUrl = 'http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png';
+    mapServerUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
 
 var minimal   = L.tileLayer(mapServerUrl, {styleId: 47926, attribution: mapAttribution}),
     midnight  = L.tileLayer(mapServerUrl, {styleId: 999,   attribution: mapAttribution});
