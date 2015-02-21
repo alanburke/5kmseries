@@ -2,3 +2,4 @@ source: "app"
 destination: "dist"
 exclude:
   - "styles"
+  - "css"
