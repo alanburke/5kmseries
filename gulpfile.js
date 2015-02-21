@@ -2,6 +2,7 @@ var gulp = require('gulp');
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
+    minifycss = require('gulp-minify-css'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
@@ -17,6 +18,7 @@ gulp.task('styles', function() {
   return gulp.src('app/styles/main.scss')
     .pipe(sass())
     .pipe(autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}))
+    .pipe(minifycss())
     .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
