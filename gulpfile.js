@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+    sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
@@ -25,13 +26,15 @@ gulp.task('styles', function() {
 
 gulp.task('styles:dev', function() {
   return gulp.src('app/styles/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}))
+    // Autoprefixer breaks sourcemaps right now
+    //.pipe(autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/css'))
     .pipe(gulp.dest('dev/css'))
     // Injects the CSS changes to your browser since Jekyll doesn"t rebuild the CSS
-    .pipe(reload({stream: true}))
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(reload({stream: true}));
 });
 
 gulp.task("jekyll", shell.task("bundle exec jekyll build"))
