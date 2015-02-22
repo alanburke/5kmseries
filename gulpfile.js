@@ -16,7 +16,7 @@ var browserSync = require("browser-sync");
 var reload = browserSync.reload;
 
 gulp.task('styles', function() {
-  return gulp.src('app/styles/main.scss')
+  return gulp.src('app/styles/*.scss')
     .pipe(sass())
     .pipe(autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}))
     .pipe(minifycss())
@@ -25,7 +25,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('styles:dev', function() {
-  return gulp.src('app/styles/main.scss')
+  return gulp.src('app/styles/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     // Autoprefixer breaks sourcemaps right now
