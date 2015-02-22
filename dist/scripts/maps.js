@@ -44,10 +44,11 @@ var hqs = L.geoJson(hqs, {
 
 
 var map = L.map('main-map', {
-    center: [53.357, -8.83],
+    center: [53.2, -8.73],
     zoom: 10,
     maxZoom: 16,
     scrollWheelZoom: false,
+    zoomControl: false,
     layers: [midnight, routes, hqs]
 
 });
@@ -73,10 +74,16 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(popupContent);
 }
 
-  $('.nav-map a, a.button').click(function(e){
+  $('.nav-map a').click(function(e){
     var lat = $(this).data('lat');
     var lon = $(this).data('lon');
-    map.setView([lat, lon] , 14);
+    map.setView([lat, lon] , 13);
+  });
+  $('a.button').click(function(e){
+    var lat = $(this).data('lat');
+    var lon = $(this).data('lon');
+    map.setView([lat, lon] , 13);
+    e.preventDefault();
   });
   $('.navbar a.all').click(function(e){
     var lat = 53.357;

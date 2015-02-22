@@ -9,16 +9,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title> Galway 5km series</title>
 <meta name="description" content="">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
-
-<script src="scripts/vendor/modernizr.min.js"></script>
 
 </head>
 <body>
-    <div id="pane"><div id="main-map"></div></div>
+  <div class="container container-home">
   <article>
     <header class="meta" id="nav">
       <h1>Galway <strong>5km series</strong> </h1>
@@ -76,8 +74,6 @@
         <p><time datetime="2014-04-29T20:00"> Tuesday 29 April, 8:00pm </time> </p>
         <p><strong>Race HQ:</strong> Athenry Primary Care Medical Centre </p>
         
-          <p> NOTE - New race route, and new race HQ! </p>
-        
           <p> Race numbers for the series are distributed before this race, so allow extra time to collect your number. </p>
         
       </section>
@@ -134,7 +130,6 @@
 
   <section class="results">
     <ul class="nav-years">
-  <li><a href="index.html">Home</a></li>
   <li><a href="2014.html">2014</a></li>
   <li><a href="2013.html">2013</a></li>
   <li><a href="2012.html">2012</a></li>
@@ -145,10 +140,13 @@
   <li><a href="2007.html">2007</a></li>
   <li><a href="2006.html">2006</a></li>
 </ul>
+<strong><a href="/" title="home">www.5km.ie</a></strong>
 
   </section>
 
   </article>
+  </div>
+  <div id="pane-wrapper"><div id="pane"><div id="main-map"></div></div></div>
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -165,7 +163,7 @@
 
 
   <!-- leaflet @TODO - AMD this-->
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js?2"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js?2"></script>
   <script src="scripts/geojson.js"></script>
   <script src="scripts/maps.js"></script>
 
