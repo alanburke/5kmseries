@@ -1,0 +1,104 @@
+body {
+  font-family: Georgia,Utopia,Palatino,'Palatino Linotype',serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ece9d7;
+  background-color: #2a333c;
+}
+#main-map {
+  color: black;
+  label {
+    color: black;
+  }
+}
+
+.container {
+  background-color: #3f4c5a;
+  background-color: rgba(63,76,90,.8);
+  transition: background 500ms,color 500ms;
+}
+h1, h2, h3, h4, h4, h6 {
+  font-family: 'Oswald',sans-serif;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #e36b23;
+  text-rendering: optimizelegibility;
+  text-shadow: -2px 2px 0 #612c0c;
+}
+h1 {
+  font-size: 1.7em;
+}
+p {
+  margin: 0 0 10px;
+}
+a {
+  color: #df691a;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #df691a;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+blockquote {
+  border-left: 5px solid #45515f;
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+}
+table {
+  background-color: transparent;
+}
+caption {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #4e5d6c;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 21px;
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 6px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #4e5d6c;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #4e5d6c;
+}
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > tbody + tbody {
+  border-top: 2px solid #4e5d6c;
+}
+table table {
+  background-color: #2b3e50;
+}

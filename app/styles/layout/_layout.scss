@@ -1,0 +1,44 @@
+body {
+  margin: 0 15px;
+}
+blockquote small {
+  display: block;
+}
+.container {
+  padding: 10px;
+  max-width: 35em;
+  margin: 0 auto;
+}
+.container-home {
+  max-width: 45em;
+  margin: 0;
+  position: relative;
+  height: 11em;
+  overflow: scroll;
+}
+@media (min-width: 45em) {
+  .container-home {
+    max-width: 20em;
+    height: auto;
+    position: fixed;
+    top: 0;
+  }
+}
+/* Map */
+#pane-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: -50%;
+  right: 0;
+  width: 66.6666%;
+  z-index: -1;
+  }
+#main-map  {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200%;
+  left: -50%;
+  z-index: -1;
+  transition: opacity 250ms;
+}
