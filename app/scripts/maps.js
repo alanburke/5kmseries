@@ -44,10 +44,11 @@ var hqs = L.geoJson(hqs, {
 
 
 var map = L.map('main-map', {
-    center: [53.357, -8.83],
+    center: [53.2, -8.73],
     zoom: 10,
     maxZoom: 16,
     scrollWheelZoom: false,
+    zoomControl: false,
     layers: [midnight, routes, hqs]
 
 });
