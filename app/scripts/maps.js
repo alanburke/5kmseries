@@ -82,6 +82,8 @@ function onEachFeature(feature, layer) {
     var lat = $(this).data('lat');
     var lon = $(this).data('lon');
     map.setView([lat, lon] , 13);
+    $('.container').toggleClass('hidden');
+    $('a.map-toggle').toggleClass('hidden');
     e.preventDefault();
   });
   $('.navbar a.all').click(function(e){
@@ -91,4 +93,9 @@ function onEachFeature(feature, layer) {
     e.preventDefault();
   });
 
+  $('a.map-toggle').click(function(e){
+    $(this).toggleClass('hidden');
+    $('.container').toggleClass('hidden');
+    e.preventDefault();
+  });
 
