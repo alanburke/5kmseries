@@ -62,7 +62,7 @@ var overlayMaps = {
     "HQs": hqs
 };
 
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+//L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 
 function onEachFeature(feature, layer) {
