@@ -13,8 +13,9 @@ blockquote small {
   transition: margin-left 0.5s ease;
 }
 .container.hidden{
-   margin-left: -2000%;
-   z-index: -10;
+  margin-left: -2000%;
+  z-index: -10;
+  display: none;
 }
 @media (min-width: 45em) {
   .container-home {
@@ -25,6 +26,7 @@ blockquote small {
   }
   .container.hidden{
      margin-left: -200%;
+     display: block;
   }
 }
 /* Map */
