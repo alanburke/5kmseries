@@ -4,6 +4,20 @@ blockquote small{
 header h1 {
   margin-top: 0;
 }
+a.map-toggle {
+  display: inline-block;
+  color: #ece9d7;
+  background-color: #45515f;
+  padding: 8px;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    margin: 0;
+  transition: margin-left 0.25s ease;
+  &.hidden {
+   margin-left: -200%;
+  }
+}
 .nav {
   margin-left: 0;
   padding-left: 0;
