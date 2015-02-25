@@ -37,10 +37,8 @@ gulp.task('styles:dev', function() {
     .pipe(reload({stream: true}));
 });
 
-gulp.task("jekyll", function(){
-  return shell.task("bundle exec jekyll build");
-});
-gulp.task("jekyll:dev", shell.task("bundle exec jekyll build -s app -d dev"))
+gulp.task("jekyll", shell.task("bundle exec jekyll build"));
+gulp.task("jekyll:dev", shell.task("bundle exec jekyll build -s app -d dev"));
 gulp.task("jekyll:rebuild", ["jekyll:dev"], function () {
   reload;
 });
