@@ -13,8 +13,11 @@ blockquote small {
   max-width: 45em;
   margin: 0;
   position: relative;
-  height: 11em;
-  overflow: scroll;
+  transition: margin-left 0.5s ease;
+}
+.container.hidden{
+   margin-left: -2000%;
+   z-index: -10;
 }
 @media (min-width: 45em) {
   .container-home {
@@ -23,22 +26,16 @@ blockquote small {
     position: absolute;
     top: 0;
   }
+  .container.hidden{
+     margin-left: -200%;
+  }
 }
 /* Map */
-#pane-wrapper {
+#main-map  {
   position: fixed;
   top: 0;
-  bottom: -50%;
-  right: 0;
-  width: 66.6666%;
-  z-index: -1;
-  }
-#main-map  {
-  position: absolute;
-  top: 0;
   bottom: 0;
-  width: 200%;
-  left: -50%;
+  width: 100%;
   z-index: -1;
   transition: opacity 250ms;
 }
