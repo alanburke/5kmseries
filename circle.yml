@@ -1,5 +1,6 @@
-general:
-  build_dir: app
+dependencies:
+  post:
+    - npm install
 
 test:
   override:
