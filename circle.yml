@@ -1,0 +1,6 @@
+general:
+  build_dir: app
+
+test:
+  override:
+    - casperjs test ./_scripts/phantom_tests.js
