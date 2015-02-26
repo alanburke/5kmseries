@@ -1,3 +1,3 @@
 source 'https://rubygems.org' 
-gem 'rack'
 
+gem 'jekyll', '~> 2.5.3'
