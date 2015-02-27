@@ -28,7 +28,7 @@
     "casperjs": "^1.1.0-beta3"
   },
   "scripts": {
-    "pretest" : "gulp jekyll && gulp styles",
-    "start" : "gulp"
+    "pretest": "gulp jekyll && gulp styles",
+    "start": "gulp"
   }
 }
