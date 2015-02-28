@@ -3,3 +3,4 @@ node_modules
 app/css
 dev
 Gemfile.lock
+.env
