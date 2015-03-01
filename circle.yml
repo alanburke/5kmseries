@@ -1,0 +1,14 @@
+dependencies:
+  post:
+    - npm test 
+    - npm install -g casperjs@1.1.0-beta3
+
+test:
+  override:
+    - casperjs test ./_scripts/phantom_tests.js
+
+deployment:
+  production:
+    branch: circleci
+    commands:
+      - bundle exec s3_website push

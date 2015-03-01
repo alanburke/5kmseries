@@ -9,6 +9,8 @@ var gulp = require('gulp');
     livereload = require('gulp-livereload'),
     del = require('del');
     shell = require('gulp-shell');
+    rev    = require('gulp-rev');
+    revreplace    = require('gulp-rev-replace');
 
 // BrowserSync isn"t a gulp package, and needs to be loaded manually
 var browserSync = require("browser-sync");
@@ -67,6 +69,26 @@ gulp.task("serve:dev", ["styles:dev", "jekyll:rebuild"], function () {
       baseDir: "dev"
     }
   });
+});
+
+
+gulp.task('revision', function () {
+    // by default, gulp would pick `assets/css` as the base,
+    // so we need to set it explicitly:
+    return gulp.src(['dist/css/*.css', 'dist/scripts/*.js'], {base: 'dist'})
+        .pipe(gulp.dest('dist'))
+        .pipe(rev())
+        .pipe(gulp.dest('dist'))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task("revreplace", ["revision"],  function(){
+  var manifest = gulp.src("dist/rev-manifest.json");
+
+  return gulp.src("dist" + "/*.html")
+    .pipe(revreplace({manifest: manifest}))
+    .pipe(gulp.dest("dist"));
 });
 
 gulp.task('build', ['jekyll', 'styles']);
