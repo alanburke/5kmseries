@@ -4,3 +4,4 @@ app/css
 dev
 Gemfile.lock
 .env
+dist
