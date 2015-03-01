@@ -3,12 +3,11 @@ destination: "dist"
 exclude:
   - "styles"
   - "css"
-
 prose:
   rooturl: 'app'
   ignore:
-    'robots.txt'
-    '_includes'
-    '_layouts'
-    'scripts'
-    'styles'
+    - 'robots.txt'
+    - '_includes'
+    - '_layouts'
+    - 'scripts'
+    - 'styles'
