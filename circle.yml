@@ -1,7 +1,15 @@
+machine:
+  pre:
+    - npm install -g casperjs@1.1.0-beta3
+
+general:
+  branches:
+    only:
+    - master
+
 dependencies:
   post:
     - npm test 
-    - npm install -g casperjs@1.1.0-beta3
 
 test:
   override:
@@ -9,6 +17,6 @@ test:
 
 deployment:
   production:
-    branch: circleci
+    branch: master
     commands:
       - bundle exec s3_website push
