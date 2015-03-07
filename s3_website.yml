@@ -24,9 +24,9 @@ s3_endpoint: eu-west-1
 #   - those_folders_of_stuff
 #   - i_wouldnt_want_to_upload
 
-# s3_reduced_redundancy: true
+s3_reduced_redundancy: true
 
-# cloudfront_distribution_id: your-dist-id
+cloudfront_distribution_id: E2J19N63PF9W0D
 
 # cloudfront_distribution_config:
 #   default_cache_behavior:
