@@ -11,6 +11,10 @@ var gulp = require('gulp');
     shell = require('gulp-shell');
     rev    = require('gulp-rev');
     revreplace    = require('gulp-rev-replace');
+    critical = require('critical');
+    uncss = require('gulp-uncss');
+
+
 
 // BrowserSync isn"t a gulp package, and needs to be loaded manually
 var browserSync = require("browser-sync");
@@ -21,9 +25,31 @@ gulp.task('styles', function() {
   return gulp.src('app/styles/*.scss')
     .pipe(sass())
     .pipe(autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}))
+    .pipe(uncss({
+        html: ['dist/*.html']
+    }))
     .pipe(minifycss())
     .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'Styles task complete' }));
+});
+
+gulp.task('copystyles', function () {
+    return gulp.src(['dist/css/style.css'])
+        .pipe($.rename({
+            basename: "site" // site.css
+        }))
+        .pipe(gulp.dest('dist/css'));
+});
+gulp.task('critical', ['styles'], function () {
+    critical.generateInline({
+        base: 'dist/',
+        src: 'index.html',
+        styleTarget: 'css/site.css',
+        htmlTarget: 'index.html',
+        width: 320,
+        height: 480,
+        minify: true
+    });
 });
 
 gulp.task('styles:dev', function() {
