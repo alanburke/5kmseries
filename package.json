@@ -25,7 +25,7 @@
     "gulp-uncss": "^1.0.0"
   },
   "scripts": {
-    "pretest": "gulp jekyll && gulp styles && gulp revreplace",
+    "pretest": "gulp jekyll && gulp critical && gulp revreplace",
     "start": "gulp"
   }
 }
