@@ -26,7 +26,7 @@ gulp.task('styles', function() {
     .pipe(sass())
     .pipe(autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}))
     .pipe(uncss({
-        html: ['dist/*.html']
+        html: ['dist/*.html'], ignore: [ '.container.hidden']
     }))
     .pipe(minifycss())
     .pipe(gulp.dest('dist/css'))
