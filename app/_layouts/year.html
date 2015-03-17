@@ -8,6 +8,9 @@
       <section>
         <h1> County Galway <strong>5km series</strong> - {{page.year}} </h1>
         <blockquote><p>{{page.quote}}<small> {{page.quotesource}}</small></p></blockquote>
+        {% if page.result != false %}
+        <h3> <a href="media/pdfs/results/{{page.year}}.pdf">Results</a> </h3>
+        {% endif %}
         {{content}}
       </section>
 
