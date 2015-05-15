@@ -28,11 +28,10 @@
   
 - name: Galway City
   datetime: 2015-05-26T20:00
-  lat: 53.29735
-  lon: -9.0017
-  hq: "Galway Racecourse"
+  lat: 53.302
+  lon: -8.94068
+  hq: "Galway Airport"
   descs:
-    - desc: Venue subject to confirmation - check back for more
 
 - name: Tuam
   datetime: 2015-06-02T20:00
