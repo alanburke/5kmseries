@@ -1,41 +1,41 @@
-- name: Athenry
-  datetime: 2015-04-28T20:00
-  lat: 53.298325 
-  lon: -8.742027
-  hq: Athenry Primary Care Medical Centre
-  descs: 
-    - desc: Race numbers for the series are distributed before this race, so allow extra time to collect your number. 
-
-- name: Loughrea
-  datetime: 2015-05-05T20:00
-  lat: 53.19765
-  lon: -8.56863
-  hq:  "Temperance Hall"
-  descs:
-
-- name: Craughwell
-  datetime: 2015-05-12T20:00
-  lat: 53.23299
-  lon: -8.740117
-  hq: "Community Hall"
-  descs:
-
-- name: Claregalway
-  datetime: 2015-05-19T20:00
-  lat: 53.33294
-  lon: -8.940296
-  hq: Claregalway Corporate Park, Oranmore Rd
-  
 - name: Galway City
-  datetime: 2015-05-26T20:00
+  datetime: 2016-04-26T19:45
   lat: 53.302
   lon: -8.94068
   hq: "Galway Airport"
   descs:
 
+- name: Craughwell
+  datetime: 2016-05-03T20:00
+  lat: 53.23299
+  lon: -8.740117
+  hq: "Community Hall"
+  descs:
+
+- name: Loughrea
+  datetime: 2016-05-10T20:00
+  lat: 53.19765
+  lon: -8.56863
+  hq:  "Temperance Hall"
+  descs:
+
 - name: Tuam
-  datetime: 2015-06-02T20:00
+  datetime: 2016-05-17T20:00
   lat: 53.52709
   lon: -8.851118
   hq: "Ard Rí House Hotel, Milltown Road"
   descs:
+
+- name: Claregalway
+  datetime: 2016-05-24T20:00
+  lat: 53.33294
+  lon: -8.940296
+  hq: Claregalway Corporate Park, Oranmore Rd
+  
+- name: Athenry
+  datetime: 2016-05-31T20:00
+  lat: 53.298325 
+  lon: -8.742027
+  hq: Athenry Primary Care Medical Centre
+  descs: 
+    - desc: Race numbers for the series are distributed before this race, so allow extra time to collect your number. 
