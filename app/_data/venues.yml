@@ -14,9 +14,9 @@
 
 - name: Loughrea
   datetime: 2016-05-10T20:00
-  lat: 53.19765
-  lon: -8.56863
-  hq:  "Temperance Hall"
+  lat: 53.198063
+  lon: -8.587768
+  hq:  "Gaelscoil Riabhach"
   descs:
 
 - name: Tuam
