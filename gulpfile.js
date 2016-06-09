@@ -77,7 +77,7 @@ gulp.task('watch', function() {
   gulp.watch('app/styles/**/*.scss', ['styles:dev']);
 
   // Watch Jekyll files
-  gulp.watch(['app/**/*.md', 'app/**/*.html', 'app/**/*.yml', 'app/**/*.txt', 'app/**/*.js'], ['jekyll:rebuild']);
+  gulp.watch(['app/**/*.md', 'app/**/*.html', 'app/**/*.yml', 'app/**/*.txt', 'app/**/*.js', 'app/**/*.geosjon'], ['jekyll:rebuild']);
 
   gulp.watch("dev/*.html").on('change', reload);
 
