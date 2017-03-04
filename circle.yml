@@ -1,4 +1,6 @@
 machine:
+  ruby:
+      version: 2.1.1
   pre:
     - npm install -g casperjs@1.1.0-beta3
 
