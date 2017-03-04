@@ -1,39 +1,39 @@
 - name: Galway City
-  datetime: 2016-04-26T19:30
+  datetime: 2017-04-25T19:30
   lat: 53.29735
   lon: -9.0017
   hq: "Galway Racecourse"
   descs:
 
+- name: Caltra
+  datetime: 2017-05-02T20:00
+  lat: 53.43455
+  lon: -8.4578266
+  hq: "Caltra"
+  descs:
+
 - name: Craughwell
-  datetime: 2016-05-03T20:00
+  datetime: 2016-05-09T20:00
   lat: 53.23299
   lon: -8.740117
   hq: "Community Hall"
   descs:
 
 - name: Loughrea
-  datetime: 2016-05-10T20:00
+  datetime: 2016-05-16T20:00
   lat: 53.198063
   lon: -8.587768
   hq:  "Gaelscoil Riabhach"
   descs:
 
-- name: Tuam
-  datetime: 2016-05-17T20:00
-  lat: 53.52709
-  lon: -8.851118
-  hq: "Ard Rí House Hotel, Milltown Road"
-  descs:
-
 - name: Claregalway
-  datetime: 2016-05-24T20:00
+  datetime: 2016-05-23T20:00
   lat: 53.33294
   lon: -8.940296
   hq: Claregalway Corporate Park, Oranmore Rd
   
 - name: Athenry
-  datetime: 2016-05-31T20:00
+  datetime: 2016-05-30T20:00
   lat: 53.298325 
   lon: -8.742027
   hq: Athenry Primary Care Medical Centre
