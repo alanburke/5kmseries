@@ -13,27 +13,27 @@
   descs:
 
 - name: Craughwell
-  datetime: 2016-05-09T20:00
+  datetime: 2017-05-09T20:00
   lat: 53.23299
   lon: -8.740117
   hq: "Community Hall"
   descs:
 
 - name: Loughrea
-  datetime: 2016-05-16T20:00
+  datetime: 2017-05-16T20:00
   lat: 53.198063
   lon: -8.587768
   hq:  "Gaelscoil Riabhach"
   descs:
 
 - name: Claregalway
-  datetime: 2016-05-23T20:00
+  datetime: 2017-05-23T20:00
   lat: 53.33294
   lon: -8.940296
   hq: Claregalway Corporate Park, Oranmore Rd
   
 - name: Athenry
-  datetime: 2016-05-30T20:00
+  datetime: 2017-05-30T20:00
   lat: 53.298325 
   lon: -8.742027
   hq: Athenry Primary Care Medical Centre
