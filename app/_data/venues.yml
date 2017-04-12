@@ -11,6 +11,10 @@
   lon: -8.4345401
   hq: "Community Hall"
   descs:
+    - desc: Start approx 1km on Galway side of Caltra. Finish in village
+    - desc: Parking at Community Hall.
+    - desc: Direction from Galway go via R339 directly via Monivea, or N63 to Mountbellew and onto R358
+    - desc: Allow min 45mins travel time from Galway City.
 
 - name: Craughwell
   datetime: 2017-05-09T20:00
@@ -31,6 +35,11 @@
   lat: 53.33294
   lon: -8.940296
   hq: Claregalway Corporate Park, Oranmore Rd
+  descs:
+    - desc: Slight change to Claregalway leg.
+    - desc: Starts outside Community Centre/ Entrance gate of new secondary school. Finish on Driveway of new secondary school.
+    - desc: Parking at Community Centre, Claregalway Business Park & in school car park. Keep roadway to Community Hall & driveway of school clear of cars.
+    - desc: Toilets & changing at Community Hall only.
   
 - name: Athenry
   datetime: 2017-05-30T20:00
