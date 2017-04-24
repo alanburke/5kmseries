@@ -1,0 +1,77 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": 1,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Athenry Primary Care Medical Centre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-8.75533914368134, 53.299676124615054]
+            }
+        },
+        {
+            "id": 2,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Árd Rí House Hotel"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-8.851118087768555, 53.52709490613132]
+            }
+        },
+        {
+            "id": 3,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Claregalway Corporate Park"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-8.940296173095703, 53.33294886082618]
+            }
+        },
+        {
+            "id": 4,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Ballybrit Racecourse"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-9.001772403717041,53.297350236532125]
+            }
+        },
+        {
+            "id": 5,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Craughwell Community Centre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-8.74011754989624, 53.23299365798959]
+            }
+        },
+        {
+            "id": 6,
+            "type": "Feature",
+            "properties": {
+                "popupContent": "Gaelscoil Riabhach"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates":
+                  [-8.588197231292725, 53.198667812863924]
+            }
+        }
+    ]
+}
