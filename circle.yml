@@ -2,7 +2,7 @@ machine:
   ruby:
       version: 2.1.1
   node:
-      version: 0.10.26
+      version: 9.11.1
   pre:
     - npm install -g casperjs@1.1.0-beta3
 
