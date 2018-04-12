@@ -41,12 +41,12 @@ var hqs = {
             "id": 4,
             "type": "Feature",
             "properties": {
-                "popupContent": "Ballybrit Racecourse"
+                "popupContent": "Kilcornan"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates":
-                  [-9.001772403717041,53.297350236532125]
+                  [-8.8631054,53.2300966]
             }
         },
         {
