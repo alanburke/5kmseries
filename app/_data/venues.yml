@@ -8,7 +8,6 @@
     - desc: Parking at Community Hall.
     - desc: Direction from Galway go via R339 directly via Monivea, or N63 to Mountbellew and onto R358
     - desc: Allow min 45mins travel time from Galway City.
-    - desc: R339 from Castleblakeney will be open till 7:45
 
 - name: Craughwell
   datetime: 2017-05-01T20:00
