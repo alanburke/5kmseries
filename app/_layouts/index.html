@@ -20,8 +20,6 @@
     {{ content }}
   </section>
 
-  <a href="http://bradleyrenault.ie/"><img class="image-sponsor" src="media/images/br.png" /></a>
-
   {% for venue in site.data.venues %}
       <section class="info" id="{{venue.name | downcase | replace: ' ', '-' }}">
         <h3>{{venue.name}}
