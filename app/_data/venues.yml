@@ -10,21 +10,21 @@
     - desc: Allow min 45mins travel time from Galway City.
 
 - name: Craughwell
-  datetime: 2017-05-01T20:00
+  datetime: 2018-05-01T20:00
   lat: 53.23299
   lon: -8.740117
   hq: "Community Hall"
   descs:
 
 - name: Loughrea
-  datetime: 2017-05-08T20:00
+  datetime: 2018-05-08T20:00
   lat: 53.1980662
   lon: -8.589962
   hq:  "Gaelscoil Riabhach"
   descs:
 
 - name: Claregalway
-  datetime: 2017-05-15T20:00
+  datetime: 2018-05-15T20:00
   lat: 53.33294
   lon: -8.940296
   hq: Claregalway Corporate Park, Oranmore Rd
@@ -34,7 +34,7 @@
     - desc: Toilets & changing at Community Hall only.
   
 - name: Athenry
-  datetime: 2017-05-22T20:00
+  datetime: 2018-05-22T20:00
   lat: 53.298325 
   lon: -8.742027
   hq: Raheen Woods hotel
@@ -42,7 +42,7 @@
     - desc: The start line is beside the Tennis Courts approx 1K from town or 1.5K from the Raheen Woods Hotel.
 
 - name: Clarinbridge
-  datetime: 2017-05-29T20:00
+  datetime: 2018-05-29T20:00
   lat: 53.2300966
   lon: -8.8631054
   hq:
