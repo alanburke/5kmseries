@@ -20,8 +20,9 @@
   datetime: 2018-05-08T20:00
   lat: 53.1980662
   lon: -8.589962
-  hq:  "Gaelscoil Riabhach"
+  hq:  "Former location of Gaelscoil Riabhach"
   descs:
+    - desc: The school has moved, but we're using the same location and route as last year.
 
 - name: Claregalway
   datetime: 2018-05-15T20:00
