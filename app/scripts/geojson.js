@@ -5,12 +5,12 @@ var hqs = {
             "id": 1,
             "type": "Feature",
             "properties": {
-                "popupContent": "Raheen Woods Hotel"
+                "popupContent": "Ard Aobhinn estate entrance"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates":
-                  [-8.761608, 53.3007399]
+                  [-8.7537103, 53.3011552]
             }
         },
         {
