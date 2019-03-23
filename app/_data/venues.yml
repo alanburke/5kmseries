@@ -1,5 +1,5 @@
 - name: Caltra
-  datetime: 2018-04-24T19:30
+  datetime: 2019-04-30T19:45
   lat: 53.4354549
   lon: -8.4345401
   hq: "Community Hall"
@@ -10,46 +10,42 @@
     - desc: Allow min 45mins travel time from Galway City.
 
 - name: Craughwell
-  datetime: 2018-05-01T20:00
+  datetime: 2019-05-07T20:00
   lat: 53.23299
   lon: -8.740117
   hq: "Community Hall"
   descs:
 
 - name: Loughrea
-  datetime: 2018-05-08T20:00
+  datetime: 2019-05-14T20:00
   lat: 53.1980662
   lon: -8.589962
   hq:  "Former location of Gaelscoil Riabhach"
   descs:
     - desc: The school has moved, but we're using the same location and route as last year.
 
-- name: Claregalway
-  datetime: 2018-05-15T20:00
-  lat: 53.33294
-  lon: -8.940296
-  hq: Claregalway Corporate Park, Oranmore Rd
-  descs:
-    - desc: Starts outside Community Centre/ Entrance gate of new secondary school. Finish on Driveway of new secondary school.
-    - desc: Parking at Community Centre, Claregalway Business Park & in school car park. Keep roadway to Community Hall & driveway of school clear of cars.
-    - desc: Toilets & changing at Community Hall only.
-  
 - name: Athenry
-  datetime: 2018-05-22T20:00
-  lat: 53.298325 
+  datetime: 2019-05-21T20:00
+  lat: 53.298325
   lon: -8.742027
   hq: Located at the finish line, Ard Aobhinn estate entrance
   descs:
     - desc: The Race start is located on the Link road 2k from the Train station past the tennis courts (last years’ start) continue to the T-junction and turn right. Toilets will be located at this junction.
 
+- name: Tuam
+  datetime: 2019-05-28T20:00
+  lat: 53.514851
+  lon: -8.851360
+  hq: TBC
+
 - name: Clarinbridge
-  datetime: 2018-05-29T20:00
+  datetime: 2019-06-04T20:00
   lat: 53.2300966
   lon: -8.8631054
   hq:
   descs:
     - desc: Hosted by GCH in Kilcornan
     - desc: Route - The race starts at Kilcornan House. It proceeds down the main avenue, turns left towards Kilcolgan and enters Kilcornan wood 400 metres later. After leaving the wood, the route proceeds to re-enter Kilcornan Wood from the east and the race ends at Kilcornan House.
-    - desc: Runner safety - Please follow the directions of the race marshals at all times. 
-    - desc: Parking - There are a large number of parking spaces available in different car parks in Kilcornan House. Please follow the directions of the parking stewards when parking. Access to Kilcornan House will not be possible under any circumstances after 7.45. If you arrive at the venue after that time please park in Clarinbridge village. Parking is not allowed at any point along the route. 
+    - desc: Runner safety - Please follow the directions of the race marshals at all times.
+    - desc: Parking - There are a large number of parking spaces available in different car parks in Kilcornan House. Please follow the directions of the parking stewards when parking. Access to Kilcornan House will not be possible under any circumstances after 7.45. If you arrive at the venue after that time please park in Clarinbridge village. Parking is not allowed at any point along the route.
     - desc: Refreshments will be available after the race in the main hall in the swimming pool at Kilcornan House. Race series t-shirts will also be distributed in this hall.
