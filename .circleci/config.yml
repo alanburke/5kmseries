@@ -7,8 +7,9 @@ jobs:
     environment:
     steps:
       - checkout
+      - run: bundle install
       - run: npm install
-      - run: npm install
+      - run: npm run pretest
       - deploy:
           name: deploy to AWS
           command: bundle exec s3_website push
