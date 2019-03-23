@@ -6,8 +6,9 @@ jobs:
     working_directory: ~/repo
     environment:
     steps:
-      -  run: npm install -g casperjs@1.1.0-beta3
       - checkout
+      - run: npm install
+      - run: npm install
       - deploy:
           name: deploy to AWS
           command: bundle exec s3_website push
