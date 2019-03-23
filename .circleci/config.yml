@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.2.7-node
+    working_directory: ~/repo
+    environment:
+    steps:
+      -  run: npm install -g casperjs@1.1.0-beta3
+      - checkout
+      - deploy:
+          name: deploy to AWS
+          command: bundle exec s3_website push
