@@ -12,4 +12,4 @@ jobs:
       - run: npm run pretest
       - deploy:
           name: deploy to AWS
-          command: bundle exec s3_website push
+          command: s3_website push
