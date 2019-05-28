@@ -34,9 +34,16 @@
 
 - name: Tuam
   datetime: 2019-05-28T20:00
-  lat: 53.514851
-  lon: -8.851360
-  hq: TBC
+  lat: 53.517073
+  lon: -8.847494
+  hq: Off Bishop St, Swimming Pool road
+  descs:
+    - desc: We have had to change our course due to roadworks and we now have a new out and back course which is fast and flat.
+    - desc: Course map. https://connect.garmin.com/modern/activity/3677365213
+    - desc: Runners must stay on the road until the turnaround and will then come back on the footpath/cycle lane.Route - The race starts at Kilcornan House. It proceeds down the main avenue, turns left towards Kilcolgan and enters Kilcornan wood 400 metres later. After leaving the wood, the route proceeds to re-enter Kilcornan Wood from the east and the race ends at Kilcornan House.
+    - desc: It is absolutely vital that runners do not run on the footpath or cycle lane on the way to the turnaround at 3km.
+    - desc: There is ample car parking in Tuam town centre including Tuam Cathedral 200+ spaces, O'Tooles Supervalu car parks and Co Council car parks.
+
 
 - name: Clarinbridge
   datetime: 2019-06-04T20:00
