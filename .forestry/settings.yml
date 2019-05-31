@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: app/_data/venues.yml
+  label: Venues
+  match: "**/*"
+  read_only: false
 - type: jekyll-pages
   label: Pages
   create: all
