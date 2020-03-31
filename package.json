@@ -3,7 +3,7 @@
   "name": "5km.ie",
   "version": "0.0.0",
   "dependencies": {
-    "npm": "^5.8.0"
+    "npm": "^6.14.4"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
